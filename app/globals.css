@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+/*
+  Design tokens for the CanoryAI admin panel.
+  ---------------------------------------------
+  Deliberately plainer and denser than the customer-facing app or
+  marketing site — this is internal tooling used by a handful of staff,
+  not a brand moment. Same forest-green identity for recognizability,
+  but the priority here is information density and clarity over polish.
+*/
+@theme {
+  --color-canvas: #f8f9fa;
+  --color-surface: #ffffff;
+  --color-ink: #14181a;
+  --color-body: #4b5563;
+  --color-muted: #6b7280;
+  --color-border: #e5e7eb;
+  --color-forest: #0b6e4f;
+  --color-forest-deep: #084a36;
+  --color-danger: #b42318;
+  --color-danger-bg: #fef3f2;
+  --color-warning-bg: #fffaeb;
+  --color-warning-ink: #93370d;
+
+  --font-sans: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+
+body {
+  background-color: var(--color-canvas);
+  color: var(--color-body);
+}
